@@ -3627,7 +3627,7 @@ int do_nvm_page(struct mm_struct *mm,struct vm_area_struct *vma,
 
     pte = pte_mknonnuma(pte);
     set_pte_at(mm, addr, ptep, pte);
-    update_mmu_cache(vma, addr ptep);
+    update_mmu_cache(vma, addr, ptep);
 
     page = vm_normal_page(vma, addr, pte);
     if(!page){
