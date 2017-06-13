@@ -3824,9 +3824,11 @@ int handle_pte_fault(struct mm_struct *mm,
 	entry = *pte;
 	if (!pte_present(entry)) {
 		if (pte_none(entry)) {
+            /*
             if (vma->vm_flags & VM_NVM)
                 return do_nvm_page(mm, vma, address, entry, pte, pmd);
-			if (vma->vm_ops) {
+			*/
+            if (vma->vm_ops) {
 				if (likely(vma->vm_ops->fault))
 					return do_linear_fault(mm, vma, address,
 						pte, pmd, flags, entry);
