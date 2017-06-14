@@ -1,7 +1,7 @@
 VERSION = 3
 PATCHLEVEL = 11
 SUBLEVEL = 0
-EXTRAVERSION = - PMFS for HMS simulator
+EXTRAVERSION = PMFS_for_HMS_simulator
 NAME = Linux for Workgroups
 
 # *DOCUMENTATION*
